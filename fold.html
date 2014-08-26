@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fold Project</title>
+<script type="text/javascript" src="scripts/jquery-min.js"></script>
+<script type="text/javascript" src="scripts/fold.js"></script>
+<link rel="stylesheet" type="text/css" href="css/fold.css"/>
+
+</head>
+<body>
+
+<div id="dialogoverlay"></div>
+<div id="dialogbox"> 
+	<div> 
+		<div id="dialogboxhead"></div> 
+		<div id="dialogboxbody"></div> 
+		<div id="dialogboxfoot"></div> 
+	</div> 
+</div>
+
+<div id="wrapper"> <!-- Begin Wrapper -->
+<div id="menu">
+<div id="file"><span class="underline">F</span>ile</div>
+<div id="help"><span class="underline">H</span>elp</div>	
+</div>	
+
+<div id="tools">
+
+<div id="fold">F.O.L.D.</div>
+
+<div id="menuDropdown">
+	<div id="new">New</div>
+	<div id="open">Open</div> 
+	<div id="close">Close</div>
+	<div id="save">Save</div>
+	<div id="print">Print</div>
+</div>
+
+<div class="tools button delete">Delete Mode</div>
+<div class="tools button draw">Draw Mode</div>
+
+
+</div>
+
+<!-- Begin Left Panel -->
+<div id="leftPanel">
+
+
+<div id="leftPanelContent">
+	<div id="addSquare" class="button">Add Square</div><br/>
+	<div id="deleteObject" class="button">Delete Object(s)</div><br/><br/>
+	<div id="clearCanvas" class="button">Clear Canvas</div>
+</div>
+
+
+</div> <!-- End Left Panel -->
+
+
+<!-- Begin Right Panel -->
+<div id="rightPanel">
+
+<div id="drawing">
+	<div id="titleBar"></div>
+	<canvas id="canvas" height="385px" width="660px">Canvas is not supported by your browser</canvas>
+	
+</div>
+	
+
+</div> <!-- End Right Panel -->
+
+<div id="footer">
+	<div id="helpNotifier">Press F1 for Help</div>
+</div>
+</div> <!-- End Wrapper -->
+
+</body>
+</html>
