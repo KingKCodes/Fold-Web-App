@@ -1,0 +1,236 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;	
+	padding:0px;
+	margin:0px;
+}
+
+body {
+	background:url("/images/redBackground.jpg");
+	color:#C7CFC6;
+	text-shadow: 1px 2px #000000;
+}
+
+#wrapper {
+	margin:auto;
+	margin-top:20px;
+	height:570px;
+	width:1000px;
+	padding:1px;
+	border-radius:2px;
+	box-shadow:3px 3px 3px black;
+}
+
+#wrapper > div {
+	border:1px solid black;
+}
+
+#leftPanel {
+	width:30%;
+	height:450px;
+	float:left;
+	background:#313631;
+}
+
+#rightPanel {
+	padding:20px;
+	width:70%;
+	height:450px;
+	float:right;
+	background:#313631;
+}
+
+#menu {
+	background:#1B1C1A;
+	height:25px;
+	border-bottom:1px solid gray;
+}
+
+#file, #help {
+	display:inline-block;
+}
+
+#menuDropdown {
+	position:absolute;
+	display:none;
+	cursor:pointer;
+	background:#A19B99;
+	width:100px;
+	border-radius:2px;
+	box-shadow:2px 2px 2px black;
+}
+
+#menuDropdown > div {
+	border-bottom:1px solid black;
+}
+
+#menu > div {
+	cursor:pointer;
+}
+
+#deleteObject {
+	margin-top:200px;
+}
+
+#leftPanelContent {
+	text-align:center;
+}
+
+#tools {
+	height:70px;
+	background:#313631;
+	position:relative;
+}
+
+#footer {
+	clear:both;
+	float:left;
+	width:100%;
+	height:25px;
+	background:#313631;
+}
+
+.underline {
+	text-decoration:underline;
+}
+
+#drawing {
+	height:410px;
+	width:660px;
+	border:1px solid black;
+	background-color:white;
+}
+
+#titleBar {
+	text-align:center;
+	background:#70020D;
+	height:25px;
+	border-bottom:1px solid black;
+}
+
+#title {
+	display:inline-block;
+	width:80px;
+	margin:auto;
+}
+
+#helpNotifier {
+	border-right:1px solid black;
+}
+
+#dialogoverlay { 
+	display: none; opacity: .8; 
+	position: fixed; top: 0px; 
+	left: 0px; 
+	background: #FFF; 
+	width: 100%; 
+	z-index: 10; 
+} 
+
+#dialogbox { 
+	display: none; 
+	position: fixed; 
+	background: #000; 
+	border-radius:7px; 
+	width:550px; 
+	z-index: 10; 
+} 
+
+#dialogbox > div { 
+	background:#FFF; 
+	margin:8px; 
+} 
+
+#dialogbox > div > #dialogboxhead { 
+	background: #666; 
+	font-size:19px; 
+	padding:10px; 
+	color:#CCC; 
+} 
+
+#dialogbox > div > #dialogboxbody { 
+	background:#333; 
+	padding:20px; 
+	color:#FFF; 
+} 
+
+#dialogbox > div > #dialogboxfoot { 
+	background: #666; 
+	padding:10px; 
+	text-align:right; 
+}
+
+.tools {
+	float:right;
+	margin-top:22px;
+	margin-right:15px;
+}
+
+.delete {
+	margin-right:100px;
+}
+
+.button {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border-top: 1px solid #c9e7f0;
+	background: #16191c;
+	background: -webkit-gradient(linear, left top, left bottom, from(#e00b0b), to(#16191c));
+	background: -webkit-linear-gradient(top, #e00b0b, #16191c);
+	background: -moz-linear-gradient(top, #e00b0b, #16191c);
+	background: -ms-linear-gradient(top, #e00b0b, #16191c);
+	background: -o-linear-gradient(top, #e00b0b, #16191c);
+	padding: 5.5px 11px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+	-moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+	box-shadow: rgba(0,0,0,1) 0 1px 0;
+	text-shadow: rgba(0,0,0,.4) 0 1px 0;
+	color: white;
+	font-size: 16px;
+	font-family: Georgia, serif;
+	text-decoration: none;
+	vertical-align: middle;
+	cursor:pointer;
+	display:inline-block;
+}
+.button:hover {
+	border-top-color: #a60816;
+	background: #a60816;
+	color: #ccc;
+}
+.button:active {
+	border-top-color: #f0081b;
+	background: #f0081b;
+}
+
+.selected {
+	background: #a60816;
+}
+
+
+#addSquare {
+	margin-top:50px;
+}
+
+#fold {
+	position: absolute;
+	top:10px;
+	left:200px;
+	font-size: 32px;
+	font-weight:800;
+	color:#AB0215;
+	font-family: Georgia, serif;
+	padding:3px;
+	box-shadow:4px 4px 5px black;
+	text-shadow:2px 2px #4D4C49;
+	border-radius:3px;
+	letter-spacing: 2px;
+}
